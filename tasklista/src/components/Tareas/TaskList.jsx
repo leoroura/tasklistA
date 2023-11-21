@@ -1,4 +1,5 @@
 import React from 'react'
+import TaskItem from './TaskItem.jsx'
 
 export default function TaskList() {
     /*Este componente deberá mostrar la lista de tareas.
@@ -9,7 +10,8 @@ export default function TaskList() {
 
   return (
     <div>
-      
+        <h2>Pendientes:</h2>
+        <TaskItem></TaskItem>
     </div>
   )
 }

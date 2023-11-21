@@ -1,9 +1,25 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+
 
 export default function Header() {
-  return (
-    <div>
-      <p>Esto es el header</p>
-    </div>
-  )
+    const [currentDate, setCurrentDate] = useState(new Date());
+
+    useEffect(() => {
+        // Esta función se ejecuta después de que el componente se renderice
+        const intervalId = setInterval(() => {
+        // Actualiza la fecha actual cada segundo
+        setCurrentDate(new Date());
+    }, 1000);
+
+    // Esta función se ejecuta cuando el componente se desmonta
+    return () => clearInterval(intervalId);
+    }, []); // El array vacío asegura que el efecto se ejecute solo una vez al renderizar el componente
+    
+    return (
+        <div>
+            <h1>Lista de tareas: </h1>
+            <p>Hoy es: {currentDate.toLocaleString()}</p>
+        </div>
+    )
 }
