@@ -91,3 +91,10 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+.footer{
+  color:#707070;
+}
+.lista_alumnos {
+  list-style-type: none;
+}
