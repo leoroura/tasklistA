@@ -8,7 +8,7 @@ export default function Footer() {
             <ul class="lista_alumnos">
                 <li>Diaz, Brian</li>
                 <li>Elizondo, Angela</li>
-                <li>Leonel Roura</li>
+                <li>Leonel, Roura</li>
             </ul>
         </p>
     </div>
