@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export const ListaForm = ({addTodo}) => {
+export const TaskForm = ({addTodo}) => {
     const [value, setValue] = useState("")
     const handleSubmit = e => {
         e.preventDefault();

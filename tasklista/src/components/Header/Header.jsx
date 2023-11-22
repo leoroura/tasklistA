@@ -18,8 +18,8 @@ export default function Header() {
     
     return (
         <div>
-            <h1>Lista de tareas: </h1>
             <p>Hoy es: {currentDate.toLocaleString()}</p>
+            <h1>Lista de tareas: </h1>
         </div>
     )
 }

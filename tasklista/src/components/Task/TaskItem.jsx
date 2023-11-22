@@ -3,7 +3,7 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
-export const Todo = ({task, toggleComplete, deleteTodo, editTodo}) => {
+export const TaskItem = ({task, toggleComplete, deleteTodo, editTodo}) => {
   return (
     <div className="Todo">
         <p className={`${task.completed ? "completed" : "incompleted"}`} onClick={() => toggleComplete(task.id)}>{task.task}</p>
