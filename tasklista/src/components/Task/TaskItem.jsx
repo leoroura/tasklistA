@@ -3,6 +3,8 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
+//componente funcional TaskItem que recibe varias props
+//utilizado para renderizar la tarea con capacidad de editar, eliminar o marcar como completada
 export const TaskItem = ({task, toggleComplete, deleteTodo, editTodo}) => {
   return (
     <div className="Todo">

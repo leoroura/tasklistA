@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 
 
 export default function Header() {
+    //usamos useState para obtener la fecha y hora, renderizándola constantemente
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
